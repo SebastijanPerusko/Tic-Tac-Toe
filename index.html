@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic tac toe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="load()">
+
+    <div class="container">
+        <div id="addBack" class="row">
+            <div class="col-sm">
+            </div>
+
+            <div class="col-sm">
+
+                <div class="pandtitle">
+                    <div id="scorex" class="column1">
+                        <h2 id="spanx">0</h2>
+                    </div>
+                    <div class="column2">
+                    </div>
+                    <div id="scoreo" class="column3">
+                        <h2 id="spano">0</h2>
+                    </div>
+                </div>
+
+
+
+                <div id="gridtwo" class="grid-container">
+                    <div onclick="play(this.id)" id="gridnic" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridena" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="griddva" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridtri" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridstiri" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridpet" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridsest" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridsedem" class="grid-item"></div>
+                    <div onclick="play(this.id)" id="gridosem" class="grid-item"></div>
+                </div>
+
+                <button onclick="myFunctiontri()" type="button" class="btn btn-primary btn-lg btn-block nova_igra">NEW GAME</button>
+
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="s1" onchange="change()" autocomplete="off" value="onevsone" checked> LOCAL
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="s2" autocomplete="off" onchange="change()" value="onevscomputer"> MEDIUM
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="s3" autocomplete="off" onchange="change()" value="onevscomputer"> IMPOSSIBLE
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="s4" autocomplete="off" onchange="change()" value="onevsonline"> ONLINE
+                    </label>
+                </div>
+                <div class="panel panel-default">
+                    <div class="tableBest containMain rounded">
+                        <table class="table table-striped table-light rounded">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">NAME</th>
+                                    <th scope="col">SCORE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td id="name1">Mark</td>
+                                    <td id="score1">3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td id="name2">Jacob</td>
+                                    <td id="score2">5</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td id="name3">Larry</td>
+                                    <td id="score3">8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

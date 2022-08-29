@@ -1,0 +1,264 @@
+body {
+    background-image:
+        url("img/backrepeat.svg"),
+        url("img/backmain.jpg");
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main {
+    width: 500px;
+    height: 500px;
+}
+
+.grid-container {
+    background-image: url('img/gridgame.svg');
+    background-size: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 35px;
+}
+
+.grid-item {
+    cursor: pointer;
+    height: 150px;
+    width: 150px;
+}
+
+.x {
+    /*font-size: 120px;*/
+    font-size: 0px;
+    color: #2A2B2DFF;
+    background-image: url('img/x_game.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: zax;
+    animation-duration: 0.5s;
+
+}
+
+.o {
+    color: #2DA8D8FF;
+    /*font-size: 112px;*/
+    font-size: 0px;
+    background-image: url('img/o_game.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: zax;
+    animation-duration: 0.5s;
+}
+
+.nova_igra {
+    background-color: #e7ebe1;
+    letter-spacing: 5px;
+    width: 500px;
+    border: none;
+    color: #004dff;
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.score {
+    display: inline-block;
+    background-color: #e7ebe1;
+    letter-spacing: 5px;
+    width: 245px;
+    height: 42px;
+    border: none;
+    color: #004e63;
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.scoreWinx {
+    background-color: red;
+}
+
+.scoreWino {
+    background-color: red;
+}
+
+.xspan {
+    color: #2A2B2DFF;
+}
+
+.ospan {
+    color: #2A2B2DFF;
+}
+
+form {
+    color: white;
+}
+
+
+.btn-secondary {
+    background-color: #e7ebe1;
+    letter-spacing: 1px;
+    color: #004dff;
+    border: none;
+    width: 126px;
+    height: 42px;
+}
+
+
+.btn-group {
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.victoryO {
+    background-image: url('img/O_victory.svg');
+}
+
+.victoryX {
+    background-image: url('img/O_victory.svg');
+}
+
+.tableBest {
+    color: #004dff;
+    border-radius: 15px;
+    width: 500px;
+}
+
+.col-sm {
+    width: 500px;
+}
+
+#spanx {
+    font-size: 35px;
+    color: white;
+    padding-top: 12px;
+}
+
+#spano {
+    font-size: 35px;
+    color: white;
+    padding-top: 12px;
+}
+
+@keyframes zax {
+    from {
+        transform: scale(2);
+        filter: blur(4px);
+    }
+
+    to {
+        transform: scale(1);
+        filter: blur(0px);
+    }
+}
+
+.win1 {
+    background-image: url('img/gridgamewin1.svg');
+}
+
+.win2 {
+    background-image: url('img/gridgamewin2.svg');
+}
+
+.win3 {
+    background-image: url('img/gridgamewin3.svg');
+}
+
+.win4 {
+    background-image: url('img/gridgamewin4.svg');
+}
+
+.win5 {
+    background-image: url('img/gridgamewin5.svg');
+}
+
+.win6 {
+    background-image: url('img/gridgamewin6.svg');
+}
+
+.win7 {
+    background-image: url('img/gridgamewin7.svg');
+}
+
+.win8 {
+    background-image: url('img/gridgamewin8.svg');
+}
+
+.win9 {
+    background-image: url('img/gridgamewin9.svg');
+}
+
+.win10 {
+    background-image: url('img/gridgamewin10.svg');
+}
+
+.win11 {
+    background-image: url('img/gridgamewin11.svg');
+}
+
+.win12 {
+    background-image: url('img/gridgamewin12.svg');
+}
+
+.win13 {
+    background-image: url('img/gridgamewin13.svg');
+}
+
+.win14 {
+    background-image: url('img/gridgamewin14.svg');
+}
+
+.win15 {
+    background-image: url('img/gridgamewin15.svg');
+}
+
+.win16 {
+    background-image: url('img/gridgamewin16.svg');
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 50px;
+    height: 70px;
+    text-align: center;
+    color: white;
+    background-image: url('img/title1.svg');
+    margin: auto;
+}
+
+.column2 {
+    float: left;
+    width: 400px;
+    height: 70px;
+    background-image: url('img/title.svg');
+}
+
+.column3 {
+    float: left;
+    width: 50px;
+    height: 70px;
+    text-align: center;
+    color: white;
+    background-image: url('img/title2.svg');
+}
+
+.pandtitle {
+    display: table;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
